@@ -65,6 +65,8 @@ public final class JavassistProxyFactory
       generateProxyClass(CallableStatement.class, ProxyCallableStatement.class.getName(), methodBody);
 
       modifyProxyFactory();
+
+      com.zaxxer.hikari.App.main(args);
    }
 
    private static void modifyProxyFactory() throws NotFoundException, CannotCompileException, IOException {

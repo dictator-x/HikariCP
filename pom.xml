@@ -252,7 +252,7 @@
             <executions>
                <execution>
                   <phase>compile</phase>
-                  <!-- phase>generate-test-sources</phase -->
+                     <!-- phase>generate-test-sources</phase -->
                   <goals>
                      <goal>java</goal>
                   </goals>
@@ -323,7 +323,7 @@
                   <configuration>
                      <!-- Sets the path to the file which contains the execution data. -->
                      <destFile>${project.build.directory}/coverage-reports/jacoco.exec</destFile>
-                     <!-- Sets the name of the property containing the settings for JaCoCo runtime agent. -->
+                        <!-- Sets the name of the property containing the settings for JaCoCo runtime agent. -->
                      <propertyName>surefireArgLine</propertyName>
                      <excludes>
                         <exclude>**/com/zaxxer/hikari/util/JavassistProxyFactory*</exclude>
@@ -396,7 +396,7 @@
                      com.codahale.metrics;resolution:=optional,
                      com.codahale.metrics.health;resolution:=optional,
                      io.micrometer.core.instrument;resolution:=optional,
-                     org.slf4j;version="[1.6,2)",
+                        org.slf4j;version="[1.6,2)",
                      org.hibernate;resolution:=optional,
                      org.hibernate.cfg;resolution:=optional,
                      org.hibernate.engine.jdbc.connections.spi;resolution:=optional,
@@ -449,7 +449,7 @@
                <configuration>
                   <!-- Sets the VM argument line used when unit tests are run. -->
                   <argLine>${surefireArgLine} ${sureFireOptions9}</argLine>
-                  <!-- Skips unit tests if the value of skip.unit.tests property is true -->
+                     <!-- Skips unit tests if the value of skip.unit.tests property is true -->
                   <skipTests>${skip.unit.tests}</skipTests>
                   <reuseForks>${sureFireForks9}</reuseForks>
                </configuration>
@@ -461,7 +461,7 @@
                <version>3.0.1</version>
                <configuration>
                   <!-- outputDirectory>/absolute/path/to/the/output/directory</outputDirectory>
-                     <finalName>filename-of-generated-jar-file</finalName -->
+                  <finalName>filename-of-generated-jar-file</finalName -->
                   <attach>true</attach>
                </configuration>
                <executions>
